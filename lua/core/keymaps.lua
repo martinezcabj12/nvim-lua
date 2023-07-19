@@ -29,7 +29,7 @@ vim.wo.cursorline = true
 vim.api.nvim_set_keymap("i", "jk", "<ESC>",{noremap = true})
 
 --Para limpiar la busqueda
-vim.keymap.set("n","<leader>h", ":nohlseach<CR>", { silent = true})
+vim.keymap.set("n","<leader>h", ":nohlsearch<CR>", { silent = true})
 
 
 
