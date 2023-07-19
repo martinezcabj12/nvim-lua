@@ -10,7 +10,7 @@ local options = {
   ignorecase = true,                       -- ignorar mayusculas y minusculas en los patrones de busqueda
   mouse = "a",                             -- permitir el uso del raton en neovim
   pumheight = 10,                          -- altura del menu emergente
-  showmode = false,                        -- ya no necesitamos ver cosas como --INSERTAR 
+  showmode = true,                        -- ya no necesitamos ver cosas como --INSERTAR 
   showtabline = 2,                         -- mostrar siempre las pestañas
   smartcase = true,                        -- mayusculas y minusculas inteligentes
   smartindent = true,                      -- hacer la sangria mas inteligente de nuevo
@@ -45,4 +45,4 @@ end
 
 vim.opt.runtimepath:remove("/usr/share/vim/vimfiles") -- separa los plugins de vim de neovim en caso de que vim siga en uso
 -- Agregar la opción para mostrar una línea vertical en la columna 120
-vim.api.nvim_set_option("colorcolumn", "120")
+vim.api.nvim_set_option("colorcolumn", "80")
