@@ -41,3 +41,13 @@ map('n', '<Space>w', ':w<CR>', { noremap = true, silent = true })
 map('n', '<Space>q', ':q<CR>', { noremap = true, silent = true })
 -- Mapeo de Espacio + A para guardar y cerrar
 map('n', '<Space>a', ':wq<CR>', { noremap = true, silent = true })
+   
+-- Definir las opciones para el mapeo
+local opts = { noremap = true, silent = true }
+
+-- Mapeo para desplazar hacia la izquierda en modo visual
+vim.api.nvim_set_keymap("v", "<", "<gv^", opts)
+
+-- Mapeo para desplazar hacia la derecha en modo visual
+vim.api.nvim_set_keymap("v", ">", ">gv^", opts)
+
