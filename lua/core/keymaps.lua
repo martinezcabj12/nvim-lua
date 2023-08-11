@@ -3,6 +3,7 @@ vim.g.mapleader = " "
 --mapeo de combinaciones
 --Para salir del modo insertar o visual
 vim.api.nvim_set_keymap("i", "jk", "<ESC>",{noremap = true})
+vim.api.nvim_set_keymap("i", "kj", "<ESC>",{noremap = true})
 
 --Para limpiar la busqueda
 vim.keymap.set("n","<leader>h", ":nohlsearch<CR>", { silent = true})

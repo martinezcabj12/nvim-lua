@@ -45,4 +45,4 @@ end
 
 vim.opt.runtimepath:remove("/usr/share/vim/vimfiles") -- separa los plugins de vim de neovim en caso de que vim siga en uso
 -- Agregar la opción para mostrar una línea vertical en la columna 120
-vim.api.nvim_set_option("colorcolumn", "80")
+--vim.cmd('set clipboard= unnamedplus')
