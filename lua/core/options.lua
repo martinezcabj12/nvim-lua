@@ -46,3 +46,14 @@ end
 vim.opt.runtimepath:remove("/usr/share/vim/vimfiles") -- separa los plugins de vim de neovim en caso de que vim siga en uso
 -- Agregar la opción para mostrar una línea vertical en la columna 120
 --vim.cmd('set clipboard= unnamedplus')
+
+
+-- Templates
+
+vim.api.nvim_exec([[
+  augroup templates
+    autocmd!
+    autocmd BufNewFile *.sh 0r ~/.config/nvim/templates/scriptbash.sh
+  augroup END
+]], false)
+
