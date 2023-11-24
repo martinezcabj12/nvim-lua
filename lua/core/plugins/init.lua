@@ -6,6 +6,7 @@ require("core.plugins.autopairs")
 require("core.plugins.treesitter")
 require("core.plugins.markdown-preview")
 require("core.plugins.live-server")
+require("core.plugins.ident-blankline")
 -- lsp imports
 require("core.plugins.lsp.mason")
 require("core.plugins.lsp.nvim-cmp")

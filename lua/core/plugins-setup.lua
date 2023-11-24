@@ -67,6 +67,9 @@ use({
    "onsails/lspkind.nvim"
   }
 
+  --identacion de anidamiento
+  use {"lukas-reineke/indent-blankline.nvim"}
+
   --Markdown Preview for nvim
   use {"iamcco/markdown-preview.nvim"}
 
