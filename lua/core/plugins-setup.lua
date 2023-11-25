@@ -51,7 +51,6 @@ use({
   use "hrsh7th/cmp-nvim-lsp"
 
   --formatter
-
   -- snippets
   use "L3MON4D3/LuaSnip"
   use "rafamadriz/friendly-snippets"
