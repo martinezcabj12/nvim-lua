@@ -79,8 +79,6 @@ use({
      tag = "0.1.0",
      requires = {{"nvim-lua/plenary.nvim"}}
   }
-
-
   --end if plugins sections
   if packer_bootstrap then
     require('packer').sync()
