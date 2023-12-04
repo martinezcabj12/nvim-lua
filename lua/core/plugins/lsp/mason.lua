@@ -20,7 +20,8 @@ mason_lspconfig.setup({
       "rust_analyzer",--rust
       "cssls",--css
       "html",
-      "marksman"--markdown
+      "marksman",--markdown
+      "pylsp" -- python
    }
 })
 

@@ -66,3 +66,9 @@ lspconfig.rust_analyzer.setup({
         on_attach = on_attach
     }
 })
+lspconfig.pylsp.setup({
+    server = {
+        capabilities = capabilities,
+        on_attach = on_attach
+    }
+})
