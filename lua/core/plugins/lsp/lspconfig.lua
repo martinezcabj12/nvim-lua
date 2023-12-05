@@ -72,3 +72,15 @@ lspconfig.pylsp.setup({
         on_attach = on_attach
     }
 })
+lspconfig.bashls.setup({
+    server = {
+        capabilities = capabilities,
+        on_attach = on_attach
+    }
+})
+lspconfig.cssls.setup({
+    server = {
+        capabilities = capabilities,
+        on_attach = on_attach
+    }
+})
