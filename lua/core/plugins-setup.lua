@@ -75,7 +75,7 @@ use({
   -- telescope setup, fuzzy finder
   use {
      "nvim-telescope/telescope.nvim",
-     tag = "0.1.0",
+     tag = "0.1.5",
      requires = {{"nvim-lua/plenary.nvim"}}
   }
   --end if plugins sections
