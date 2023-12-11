@@ -10,7 +10,7 @@ local options = {
   ignorecase = true,                       -- ignorar mayusculas y minusculas en los patrones de busqueda
   mouse = "a",                             -- permitir el uso del raton en neovim
   pumheight = 10,                          -- altura del menu emergente
-  showmode = true,                        -- ya no necesitamos ver cosas como --INSERTAR 
+  showmode = true,                        -- ya no necesitamos ver cosas como --INSERTAR
   showtabline = 2,                         -- mostrar siempre las pestañas
   smartcase = true,                        -- mayusculas y minusculas inteligentes
   smartindent = true,                      -- hacer la sangria mas inteligente de nuevo
@@ -57,3 +57,25 @@ vim.api.nvim_exec([[
   augroup END
 ]], false)
 
+-- Eliminar  espacio vacios en las lineas del final
+
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+    pattern = {"*"},
+    callback = function(ev)
+        save_cursor = vim.fn.getpos(".")
+        vim.cmd([[%s/\s\+$//e]])
+        vim.fn.setpos(".", save_cursor)
+    end,
+})
+
+
+--Para detectar errores, use pcall()
+--
+--vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+--    pattern = {"*"},
+--    callback = function()
+--      local save_cursor = vim.fn.getpos(".")
+--      pcall(function() vim.cmd [[%s/\s\+$//e]] end)
+--      vim.fn.setpos(".", save_cursor)
+--    end,
+--})
