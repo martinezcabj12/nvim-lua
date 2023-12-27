@@ -12,5 +12,3 @@ saga.setup({
         edit = "<CR>",
     },
 })
-
-

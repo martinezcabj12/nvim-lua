@@ -43,7 +43,7 @@ use({
   --autopairs
   use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
-  
+
   --completions
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-buffer"
@@ -58,7 +58,7 @@ use({
 
   --lsp -> lenguage server protocols
   use {
-   "williamboman/mason.nvim", 
+   "williamboman/mason.nvim",
    "williamboman/mason-lspconfig.nvim",
    "neovim/nvim-lspconfig",
    "glepnir/lspsaga.nvim",branch = "main", --for window like vscode
@@ -68,6 +68,11 @@ use({
 
   --identacion de anidamiento
   use {"lukas-reineke/indent-blankline.nvim"}
+
+  -- Rest-nvim para API
+  use {
+  	"rest-nvim/rest.nvim",
+  	requires = { "nvim-lua/plenary.nvim" }}
 
   --Markdown Preview for nvim
   use {"iamcco/markdown-preview.nvim"}
