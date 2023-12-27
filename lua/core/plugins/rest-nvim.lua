@@ -46,4 +46,3 @@ vim.api.nvim_create_autocmd("FileType", {
     end, { noremap = true, buffer = buf })
   end,
 })
-
