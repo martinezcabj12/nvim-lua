@@ -1,3 +1,8 @@
+local ok, rest_nvim = pcall(require, "rest-nvim")
+if not ok then
+  return
+end
+
 require("rest-nvim").setup({
   -- Configuración del complemento rest.nvim
   result_split_horizontal = false,
