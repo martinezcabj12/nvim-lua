@@ -8,6 +8,7 @@ require("core.plugins.markdown-preview")
 require("core.plugins.live-server")
 require("core.plugins.ident-blankline")
 require("core.plugins.rest-nvim")
+require("core.plugins.comment")
 -- lsp imports
 require("core.plugins.lsp.mason")
 require("core.plugins.lsp.nvim-cmp")

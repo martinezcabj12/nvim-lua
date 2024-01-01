@@ -77,6 +77,14 @@ use({
   --Markdown Preview for nvim
   use {"iamcco/markdown-preview.nvim"}
 
+  -- Comment
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
+
   -- telescope setup, fuzzy finder
   use {
      "nvim-telescope/telescope.nvim",
