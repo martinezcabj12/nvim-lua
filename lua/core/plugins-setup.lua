@@ -61,10 +61,18 @@ use({
    "williamboman/mason.nvim",
    "williamboman/mason-lspconfig.nvim",
    "neovim/nvim-lspconfig",
-   "glepnir/lspsaga.nvim",branch = "main", --for window like vscode
    "jose-elias-alvarez/typescript.nvim",
    "onsails/lspkind.nvim"
   }
+
+  use ({
+    'nvimdev/lspsaga.nvim',
+    after = 'nvim-lspconfig',
+    config = function()
+        require('lspsaga').setup({})
+    end,
+  })
+
 
   --identacion de anidamiento
   use {"lukas-reineke/indent-blankline.nvim"}
