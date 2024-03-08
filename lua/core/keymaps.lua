@@ -8,6 +8,14 @@ vim.api.nvim_set_keymap("i", "kj", "<ESC>",{noremap = true})
 --Para limpiar la busqueda
 vim.keymap.set("n","<leader>h", ":nohlsearch<CR>", { silent = true})
 
+-- Atajo para cambiar a la pestaña siguiente
+vim.api.nvim_set_keymap('n', '<leader>m', ':tabnext<CR>', {noremap = true})
+-- Atajo para cambiar a la pestaña anterior
+vim.api.nvim_set_keymap('n', '<leader>b', ':tabprevious<CR>', {noremap = true})
+-- Atajo para mover una pestaña a la izquierda
+vim.api.nvim_set_keymap('n', '<leader>tj', ':tabmove -1<CR>', {noremap = true})
+-- Atajo para mover una pestaña a la derecha
+vim.api.nvim_set_keymap('n', '<leader>tj', ':tabmove +1<CR>', {noremap = true})
 
 
 -- Archivo keymaps.lua
@@ -18,7 +26,7 @@ map('n', '<Space>w', ':w<CR>', { noremap = true, silent = true })
 map('n', '<Space>q', ':q<CR>', { noremap = true, silent = true })
 -- Mapeo de Espacio + A para guardar y cerrar
 map('n', '<Space>a', ':wq<CR>', { noremap = true, silent = true })
-   
+
 -- Definir las opciones para el mapeo
 local opts = { noremap = true, silent = true }
 
