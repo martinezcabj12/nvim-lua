@@ -40,6 +40,7 @@ use({
   use "nvim-tree/nvim-web-devicons"
   use "nvim-treesitter/nvim-treesitter"
 
+
   --autopairs
   use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"

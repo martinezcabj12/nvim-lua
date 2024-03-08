@@ -82,6 +82,12 @@ lspconfig.bashls.setup({
         on_attach = on_attach
     }
 })
+lspconfig.astro.setup({
+    server = {
+        capabilities = capabilities,
+        on_attach = on_attach
+    }
+})
 lspconfig.cssls.setup({
     server = {
         capabilities = capabilities,
