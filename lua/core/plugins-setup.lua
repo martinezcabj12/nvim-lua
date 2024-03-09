@@ -16,10 +16,12 @@ return require('packer').startup(function(use)
   --insert packer plugins between this lines
 
   --theme
---  use "folke/tokyonight.nvim"
---  use "oxfist/night-owl.nvim"
---  use "ChristianChiarulli/onedark.nvim"
-  use "lunarvim/darkplus.nvim"
+  --  use "folke/tokyonight.nvim"
+  --  use "oxfist/night-owl.nvim"
+  --  use "ChristianChiarulli/onedark.nvim"
+  -- use "lunarvim/darkplus.nvim"
+  use ({ 'projekt0n/github-nvim-theme' })
+
   -- lua line theme
   use "nvim-lualine/lualine.nvim"
 
