@@ -20,8 +20,8 @@ return require('packer').startup(function(use)
   --  use "oxfist/night-owl.nvim"
   --  use "ChristianChiarulli/onedark.nvim"
   -- use "lunarvim/darkplus.nvim"
-  use ({ 'projekt0n/github-nvim-theme' })
-
+  -- use ({ 'projekt0n/github-nvim-theme' })
+  use 'JoosepAlviste/palenightfall.nvim'
   -- lua line theme
   use "nvim-lualine/lualine.nvim"
 

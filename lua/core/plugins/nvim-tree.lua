@@ -20,11 +20,17 @@ vim.api.nvim_set_keymap('n', '<leader>rr', ':NvimTreeRefresh<CR>', {noremap = tr
 
 -- OR setup with some options
 require("nvim-tree").setup({
+  sync_root_with_cwd = true,
+  respect_buf_cwd = true,
+  update_focused_file = {
+    enable = true,
+    update_root = true
+  },
   sort = {
     sorter = "case_sensitive",
   },
   view = {
-    width = 40,
+    width = 30,
   },
   renderer = {
     group_empty = true,
