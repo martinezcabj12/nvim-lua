@@ -11,7 +11,7 @@ local options = {
   mouse = "a",                             -- permitir el uso del raton en neovim
   pumheight = 10,                          -- altura del menu emergente
   showmode = true,                        -- ya no necesitamos ver cosas como --INSERTAR
-  showtabline = 1,                         -- mostrar siempre las pestañas
+  showtabline = 2,                         -- mostrar siempre las pestañas
   smartcase = true,                        -- mayusculas y minusculas inteligentes
   smartindent = true,                      -- hacer la sangria mas inteligente de nuevo
   splitbelow = true,                       -- fuerza que todas la divisiones horizontales vayan por debajo de la ventana actual
@@ -47,6 +47,7 @@ vim.opt.runtimepath:remove("/usr/share/vim/vimfiles") -- separa los plugins de v
 -- Agregar la opción para mostrar una línea vertical en la columna 120
 --vim.cmd('set clipboard= unnamedplus')
 
+vim.env.JAVA_HOME = "/usr/lib/jvm/java-17-openjdk-amd64"
 
 -- Templates
 

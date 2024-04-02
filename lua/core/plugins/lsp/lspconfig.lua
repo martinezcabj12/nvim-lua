@@ -95,3 +95,15 @@ lspconfig.cssls.setup({
         on_attach = on_attach
     }
 })
+lspconfig.jdtls.setup({
+    server = {
+        capabilities = capabilities,
+        on_attach = on_attach
+    }
+})
+--[[ lspconfig.ast_grep.setup({
+    server = {
+        capabilities = capabilities,
+        on_attach = on_attach
+    }
+}) ]]
