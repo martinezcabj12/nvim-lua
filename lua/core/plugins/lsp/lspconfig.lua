@@ -101,9 +101,16 @@ lspconfig.jdtls.setup({
         on_attach = on_attach
     }
 })
---[[ lspconfig.ast_grep.setup({
+lspconfig.emmet_language_server.setup({
     server = {
         capabilities = capabilities,
         on_attach = on_attach
     }
-}) ]]
+})
+lspconfig.unocss.setup({
+    server = {
+        capabilities = capabilities,
+        on_attach = on_attach
+    }
+})
+

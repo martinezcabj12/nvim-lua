@@ -21,7 +21,13 @@ mason_lspconfig.setup({
       "cssls",--css
       "html",
       "marksman",--markdown
-      "pylsp" -- python
+      "pylsp", -- python
+      "cssmodules_ls", -- css
+      "unocss", -- css
+      "autotools_ls",
+      "jdtls", -- java
+      "emmet_language_server", -- emmet
+      "emmet_ls"
    }
 })
 
